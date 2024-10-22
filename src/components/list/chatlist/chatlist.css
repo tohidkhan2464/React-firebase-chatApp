@@ -1,0 +1,108 @@
+.chatlist {
+
+    flex: 1;
+    overflow: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+  
+    .search {
+
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+        align-items: center;
+
+
+        .searchBar {
+            flex: 1;
+            background-color: rgba(17, 25, 40, .5);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-radius: 10px;
+            padding: 10px;
+
+            input {
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: white;
+                flex: 1;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .add {
+            width: 36px;
+            height: 36px;
+            background-color: rgba(17, 25, 40, .5);
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+
+    }
+
+
+    .item {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+        align-items: center;
+        cursor: pointer;
+        border-bottom: 1px solid #dddddd35;
+        transform: all .1s;
+        border-radius: 10px;
+        position: relative;
+
+        &:hover {
+            background-color: rgba(17, 25, 40, .5);
+        }
+
+        .isSeen{
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: 0;
+            height: 20px;
+            width: 20px;
+            border: none;
+            border-radius: 50%;
+            background-color: rgb(15, 255, 15);
+            box-shadow: 0px 0px 2px 2px rgb(115, 250, 115);
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .texts {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+
+            span {
+                font-weight: 500;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 14px;
+            }
+        }
+
+
+    }
+
+
+}
